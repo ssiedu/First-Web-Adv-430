@@ -20,11 +20,35 @@ public class Calculator extends HttpServlet {
         //provide-proccessed-data-back-to-client(response)
             //PrintWriter is a stream used for sending text
             PrintWriter out=response.getWriter();
-            out.println("Thanks For Visiting Us. ");
-            out.println("Amount : "+amount);
-            out.println("Time   : "+time);
-            out.println("Interest Amount : "+interest);
-            out.println("Net Amount : "+net);
+            //any thing we write on print writer goes to 
+            //browser
+            out.println("<html>");
+            out.println("<body bgcolor=\"pink\">");
+            out.println("<h3>Interest Details</h3>");
+            out.println("<hr>");
+            out.println("<table border=1>");
+            out.println("<tr>");
+            out.println("<td>Amount</td>");
+            out.println("<td>"+amount+"</td>");
+            out.println("</tr>");
+            out.println("<tr>");
+            out.println("<td>Time</td>");
+            out.println("<td>"+time+"</td>");
+            out.println("</tr>");
+            out.println("<tr>");
+            out.println("<td>Interest</td>");
+            out.println("<td>"+interest+"</td>");
+            out.println("</tr>");
+            out.println("<tr>");
+            out.println("<td>NetAmount</td>");
+            out.println("<td>"+net+"</td>");
+            out.println("</tr>");
+            out.println("</table>");
+            out.println("<hr>");
+            out.println("<a href=index.jsp>Home</a>");
+            out.println("<marquee>Attractive Interest Rates</marquee>");
+            out.println("</body>");
+            out.println("</html>");
             out.close();
     }
             

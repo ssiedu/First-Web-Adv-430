@@ -4,16 +4,29 @@
         <servlet-name>Calculator</servlet-name>
         <servlet-class>mypkg.Calculator</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Rates</servlet-name>
+        <servlet-class>Rates</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RuleBook</servlet-name>
+        <servlet-class>RuleBook</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Calculator</servlet-name>
         <url-pattern>/Calculator</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Rates</servlet-name>
+        <url-pattern>/Rates</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RuleBook</servlet-name>
+        <url-pattern>/RuleBook</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
-    <welcome-file-list>
-        <welcome-file>info.jsp</welcome-file>
-    </welcome-file-list>
 </web-app>

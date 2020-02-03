@@ -9,6 +9,6 @@
                     <input type="submit"/>
             </pre>
         </form>
-        <hr>
+        <a href="index.jsp"><img src="images/home_nav.png"/></a>
     </body>
 </html>
