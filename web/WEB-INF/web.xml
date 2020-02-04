@@ -12,6 +12,10 @@
         <servlet-name>RuleBook</servlet-name>
         <servlet-class>RuleBook</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CreateAccount</servlet-name>
+        <servlet-class>CreateAccount</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Calculator</servlet-name>
         <url-pattern>/Calculator</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>RuleBook</servlet-name>
         <url-pattern>/RuleBook</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CreateAccount</servlet-name>
+        <url-pattern>/CreateAccount</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
